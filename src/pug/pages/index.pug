@@ -1,0 +1,53 @@
+doctype html
+html(lang= 'ru-Ru')
+head
+    title Krilatko.com
+    meta(name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel='stylesheet' type="text/css"  href='css/style.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+body
+    .container
+        header.row
+            .logo
+                img(src="./img/logo.png", alt="logotype")
+                img(src="./img/logoText.jpg", alt="logotype")
+            .contacts
+                p.number +7(950)733-31-70
+                a.docall(href='#') Заказать бесплатный звонок
+    .first-screen
+         .heading
+            h1  Сертифицированные детские
+            h1  бескаркасные автокресла
+            h2 с бесплатной доставкой по Челябинску
+         .card
+             h3.heading-card Нет времени читать ?
+             p.heading-sub  Оставьте номер, мы вам перезвоним
+             input.formphone(type='text' placeholder="Оставьте телефон")
+
+             button.btn-call(type='submit') Перезвоните мне
+    .secondscreen.container
+        h1 Почему именно бескаркасные кресла?
+        .item
+            img.arrow(src="./img/arrow.jpg" alt="arrow")
+            .left
+                h2.heading-card Оставляет ваш салон <br> свободным
+                p.heading-sub Бескаркасное кресло "Смайл" можно не снимать во время перевозки взрослого или груза. Кресло весит всего 700 грамм и установить его можно в любой автомобиль
+            .right
+                img(src='./img/ch1.png' alt='chair')
+        .item
+            img.arrow(src="./img/arrowleft.jpg" alt="arrow")
+            .right
+                img(src='./img/ch2.png' alt='chair')
+            .left
+                h2.heading-card Подходит большинству групп детей
+                p.heading-sub Автокресло рассчитано на возраст от 1 года до 12 лет (от 9 кг до 36 кг) Имеет пятиточную фиксацию ребенка, как в гоночном автомобиле
+
+        .item
+            img.arrow(src="./img/arrow.jpg" alt="arrow")
+            .left
+                h2.heading-card Оставляет ваш салон <br> свободным
+                p.heading-sub Автокресла производят в г. Георгиевске (Ставропольский край), соответсвуют нормам ГИБДД и разрешены к использованию по всей территории РФ, о чем говорит сертификат соответствия.
+            .right
+                img(src='./img/ch3.png' alt='chair')
+    .thirdscreen
