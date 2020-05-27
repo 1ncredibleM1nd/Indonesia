@@ -1,53 +1,145 @@
 doctype html
 html(lang= 'ru-Ru')
 head
-    title Krilatko.com
+    title Indonezia.com
     meta(name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
     link(rel='stylesheet' type="text/css"  href='css/style.css')
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    script(src="https://kit.fontawesome.com/ff2f3aab2f.js" crossorigin="anonymous")
 body
-    .container
-        header.row
-            .logo
-                img(src="./img/logo.png", alt="logotype")
-                img(src="./img/logoText.jpg", alt="logotype")
-            .contacts
-                p.number +7(950)733-31-70
-                a.docall(href='#') Заказать бесплатный звонок
-    .first-screen
-         .heading
-            h1  Сертифицированные детские
-            h1  бескаркасные автокресла
-            h2 с бесплатной доставкой по Челябинску
-         .card
-             h3.heading-card Нет времени читать ?
-             p.heading-sub  Оставьте номер, мы вам перезвоним
-             input.formphone(type='text' placeholder="Оставьте телефон")
+    div.container-fluid.screen1
+        div.container
+            ul.nav.justify-content-between.align-items-center
+                li.nav-item
+                    a.nav-link(href = '#')
+                        img(src='./img/sun.png')
 
-             button.btn-call(type='submit') Перезвоните мне
-    .secondscreen.container
-        h1 Почему именно бескаркасные кресла?
-        .item
-            img.arrow(src="./img/arrow.jpg" alt="arrow")
-            .left
-                h2.heading-card Оставляет ваш салон <br> свободным
-                p.heading-sub Бескаркасное кресло "Смайл" можно не снимать во время перевозки взрослого или груза. Кресло весит всего 700 грамм и установить его можно в любой автомобиль
-            .right
-                img(src='./img/ch1.png' alt='chair')
-        .item
-            img.arrow(src="./img/arrowleft.jpg" alt="arrow")
-            .right
-                img(src='./img/ch2.png' alt='chair')
-            .left
-                h2.heading-card Подходит большинству групп детей
-                p.heading-sub Автокресло рассчитано на возраст от 1 года до 12 лет (от 9 кг до 36 кг) Имеет пятиточную фиксацию ребенка, как в гоночном автомобиле
+                li.nav-item
+                    a.nav-link.active(href = '#') Об экспедиции
+                li.nav-item
+                    a.nav-link(href = '#') Как это было в 2019
+                li.nav-item
+                    a.nav-link(href = '#') Стоимость
+                li.nav-item
+                    a.nav-link.phone(href = '#') <i class="fas fa-phone-alt"></i> +7 (921) 852 25 25
+            div.content
 
-        .item
-            img.arrow(src="./img/arrow.jpg" alt="arrow")
-            .left
-                h2.heading-card Оставляет ваш салон <br> свободным
-                p.heading-sub Автокресла производят в г. Георгиевске (Ставропольский край), соответсвуют нормам ГИБДД и разрешены к использованию по всей территории РФ, о чем говорит сертификат соответствия.
-            .right
-                img(src='./img/ch3.png' alt='chair')
-    .thirdscreen
+                h2.char Чарующая
+                h1.indo ИНДОНЕЗИЯ
+                h2.nature По законам дикой природы
+                button.afisha 17-25 ноября 2020
+                div.cards
+                   div.card-items.item1
+                       h3 8
+                       p  Дней <br/> путешествия
+                   div.line
+                   div.card-items.item2
+                        h3 15
+                        p  Предпринимателей <br/> в команде
+                   div.line
+                   div.card-items.item3
+                        h3 126
+                        p  Километров <br/> в пути
+                button.call Узнать стоимость
+                   div.painter
+                       div.counter
+                            p.oranged   14
+                            p из
+                            p.number    40
+                       p.text мест осталос
+    div.screen2
+        div.container
+            h1.h1.text-center.mt-5  Духовное обогащение <br/>и предпринимательский опыт
+            h2.h2.text-center Погрузитесь сразу в 2 противоположные сферы развития: <br/> духовную и предпринимательскую. <br/>А мы Вам в этом поможем!
+            div.row.justify-content-around.align-items-center
+                div.carousel.slide(id='carouselExampleInterval' data-ride="carousel")
+                    <ol class="carousel-indicators mx-auto ml-5">
+                    <li data-target="#carouselExampleInterval" data-slide-to="0" class="navigation active"></li>
+                    <li data-target="#carouselExampleInterval" data-slide-to="1" class="navigation"></li>
+                    <li data-target="#carouselExampleInterval" data-slide-to="2" class="navigation"></li>
+                    </ol>
+                    div.carousel-inner.mb-5
+                        div.carousel-item.active(data-interval="10000")
+                            img.number.w-50(src="./img/first.png" alt='number')
+                            div.text-about.text-center.ml-5(style="width: 300px;")
+                                h3.mb-3.mr-3 Эмоции
+                                p.m-3.text-ab  Во время экспедиции Вы побываете во всех стихиях,поднимитесь и опуститесьна разные высоты, очутитесь в самых красивых местах Индонезии. Вас охватит весь спектор эмоций
+                        div.carousel-item(data-interval="2000")
+                            img.number.w-50(src="./img/second.png" alt='number')
+                            div.text-about.text-center.ml-5(style="width: 300px;")
+                                 h3.mb-3.mr-3 Бизнес
+                                 p.m-3.text-ab Вместе с Вами в экспедиции будут предприниматели с доходом выше 1млн в месяц. <br/> Окружение, благодаря которому Вы сможете вырости. Бесконечный нетворкинг
+                        div.carousel-item(data-interval="2000")
+                            img.number.w-50(src="./img/third.png" alt='number')
+                            div.text-about.text-center.ml-5(style="width: 300px;")
+                                h3.mb-3.mr-3 Испытание
+                                p.m-3.text-ab Это не просто лакшери путешествие — это суровая экспедиция, которая поможет Вам испытать, преодолеть себя и узнать, чего вы стоите на самом деле. Вы готовы?
+
+                img(src="./img/ocean.png")
+
+    div.container-fluid.screen3
+        div.container.text-center
+            h1.text-light.title Страна, которая Вас перезапустит
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner carousel-block">
+        <div class="carousel-item active">
+          div.row.justify-content-center
+            <img class="image-carousel" src="./img/first-picture.png">
+            <img class="image-carousel im2" src="./img/second-image.png">
+            <img class="image-carousel im3" src="./img/third-picture.png">
+          p.subtitles.text-light Территория современной Индонезии стала одним из первых мест на планете, где устраивали свои поселения древние люди. Человек разумный появился в этих местах примерно 45 000 лет назад.
+        </div>
+        <div class="carousel-item">
+            div.row.justify-content-center
+                <img class="image-carousel" src="./img/first-picture.png">
+                <img class="image-carousel im2" src="./img/third-picture.png">
+                <img class="image-carousel im3" src="./img/second-image.png">
+            p.subtitles.text-light  На севере индонезийского острова Суматра расположено самое большое вулканическое озеро на планете.<br/> Мы также там побываем.
+        </div>
+        <div class="carousel-item">
+             div.row.justify-content-center
+                 <img class="image-carousel" src="./img/second-image.png">
+                 <img class="image-carousel im2" src="./img/first-picture.png">
+                 <img class="image-carousel im3" src="./img/third-picture.png">
+             p.subtitles.text-light  На территории Индонезии есть около 150 действующих вулканов. Вы сможете побыть рядом с несколькими и получить их энергетику.
+        </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+        </div>
+
+
+    div.container-fluid.screen4
+        div.container.text-center
+            h1.text-light.title2 Cтоимость участия
+            h1.text-light.tittle3 450 000 р
+            h2.mt-5.text-light В эту стоимость включено всё
+            button.call Узнать стоимость
+            img.fruits(src="../img/fruits.png" alt="fruits")
+            img.girls(src="../img/girls.png" alt="girls")
+
+
+
+
+    footer.container-fluid
+        ul.nav.justify-content-around.align-items-center
+            li.nav-item
+                a.nav-link(href = '#')
+                   h3 Лого
+
+            h3.accept Согласие на обработку данных
+            li.nav-item
+                a.nav-link.phone(href = '#') <i class="fas fa-phone-alt"></i> +7 (921) 852 25 25
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
