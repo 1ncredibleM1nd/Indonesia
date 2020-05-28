@@ -1,6 +1,7 @@
 doctype html
 html(lang= 'ru-Ru')
 head
+    <meta charset="utf-8">
     title Indonezia.com
     meta(name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
@@ -76,7 +77,7 @@ body
                                 h3.mb-3.mr-3 Испытание
                                 p.m-3.text-ab Это не просто лакшери путешествие — это суровая экспедиция, которая поможет Вам испытать, преодолеть себя и узнать, чего вы стоите на самом деле. Вы готовы?
 
-                img(src="./img/ocean.png")
+                img.show(src="./img/ocean.png")
 
     div.container-fluid.screen3
         div.container.text-center
@@ -126,18 +127,15 @@ body
             img.fruits(src="../img/fruits.png" alt="fruits")
             img.girls(src="../img/girls.png" alt="girls")
 
-
-
-
     footer.container-fluid
-        ul.nav.justify-content-around.align-items-center
-            li.nav-item
-                a.nav-link(href = '#')
-                   h3 Лого
+        div.container.mx-auto
+            div.menu.d-flex.justify-content-between.align-items-center
+                h3 Лого
+                p.accept Согласие на обработку данных
+                <a class="nav-link phone" href="#"><i class="fas fa-phone-alt"></i> +7 (921) 852 25 25</a>
 
-            h3.accept Согласие на обработку данных
-            li.nav-item
-                a.nav-link.phone(href = '#') <i class="fas fa-phone-alt"></i> +7 (921) 852 25 25
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
