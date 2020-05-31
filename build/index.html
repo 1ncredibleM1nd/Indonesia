@@ -38,20 +38,20 @@
             <p> Километров <br/> в пути</p>
           </div>
         </div>
-        <button class="call">Узнать стоимость
+        <button class="call" data-modal>Узнать стоимость
           <div class="painter">
             <div class="counter">
               <p class="oranged">  14</p>
               <p>из</p>
               <p class="number">   40</p>
             </div>
-            <p class="text">мест осталос</p>
+            <p class="text">мест осталось</p>
           </div>
         </button>
       </div>
     </div>
   </div>
-  <div class="screen2">
+  <div class="screen2 container-fluid">
     <div class="container">
       <h1 class="h1 text-center mt-5"> Духовное обогащение <br/>и предпринимательский опыт</h1>
       <h2 class="h2 text-center">Погрузитесь сразу в 2 противоположные сферы развития: <br/> духовную и предпринимательскую. <br/>А мы Вам в этом поможем!</h2>
@@ -124,7 +124,7 @@
       <h1 class="text-light title2">Cтоимость участия</h1>
       <h1 class="text-light tittle3">450 000 р</h1>
       <h2 class="mt-5 text-light">В эту стоимость включено всё</h2>
-      <button class="call">Узнать стоимость</button><img class="fruits" src="../img/fruits.png" alt="fruits"><img class="girls" src="../img/girls.png" alt="girls">
+      <button class="call" data-modal>Узнать стоимость</button><img class="fruits" src="../img/fruits.png" alt="fruits"><img class="girls" src="../img/girls.png" alt="girls">
     </div>
   </div>
   <footer class="container-fluid">
@@ -134,7 +134,21 @@
         <p class="accept">Согласие на обработку данных</p><a class="nav-link phone" href="#"><i class="fas fa-phone-alt"></i> +7 (921) 852 25 25</a>
       </div>
     </div>
-  </footer><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </footer><div class="modal hide_modal">
+<div class="modal__dialog">
+<div class="modal__content">
+<form action="#">
+<div class="modal__close" data-close>&times;</div>
+<div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+<input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+<input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+<button  class="btn btn-success">Перезвонить мне</button>
+</form>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
 </body>

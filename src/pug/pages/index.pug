@@ -42,14 +42,14 @@ body
                    div.card-items.item3
                         h3 126
                         p  Километров <br/> в пути
-                button.call Узнать стоимость
+                button.call(data-modal) Узнать стоимость
                    div.painter
                        div.counter
                             p.oranged   14
                             p из
                             p.number    40
-                       p.text мест осталос
-    div.screen2
+                       p.text мест осталось
+    div.screen2.container-fluid
         div.container
             h1.h1.text-center.mt-5  Духовное обогащение <br/>и предпринимательский опыт
             h2.h2.text-center Погрузитесь сразу в 2 противоположные сферы развития: <br/> духовную и предпринимательскую. <br/>А мы Вам в этом поможем!
@@ -123,7 +123,7 @@ body
             h1.text-light.title2 Cтоимость участия
             h1.text-light.tittle3 450 000 р
             h2.mt-5.text-light В эту стоимость включено всё
-            button.call Узнать стоимость
+            button.call(data-modal) Узнать стоимость
             img.fruits(src="../img/fruits.png" alt="fruits")
             img.girls(src="../img/girls.png" alt="girls")
 
@@ -133,7 +133,19 @@ body
                 h3 Лого
                 p.accept Согласие на обработку данных
                 <a class="nav-link phone" href="#"><i class="fas fa-phone-alt"></i> +7 (921) 852 25 25</a>
-
+    <div class="modal hide_modal">
+    <div class="modal__dialog">
+    <div class="modal__content">
+    <form action="#">
+    <div class="modal__close" data-close>&times;</div>
+    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+    <button  class="btn btn-success">Перезвонить мне</button>
+    </form>
+    </div>
+    </div>
+    </div>
 
 
 
@@ -141,3 +153,4 @@ body
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    script(src="./js/index.js")
