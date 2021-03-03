@@ -27,7 +27,7 @@
     "gulp-svgmin": "^2.2.0",
     "gulp-tinypng": "^1.0.2",
     "node-sass": "^4.13.1",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   },
   "browserslist": [
     "defaults",
